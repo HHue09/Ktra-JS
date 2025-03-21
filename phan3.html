@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .tab {
+            padding: 5px 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+        .active {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Type : <span id="typeTitle"></span></h2>
+    <div class="tabs">
+        <button class="tab" data-type="posts">posts</button>
+        <button class="tab" data-type="photos">photos</button>
+        <button class="tab" data-type="albums">albums</button>
+    </div>
+    <ul id="contentList"></ul>
+
+    <script src="./js/phan3.js"></script>
+</body>
+</html>
